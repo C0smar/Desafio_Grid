@@ -1,0 +1,242 @@
+body { 
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+    /* grid layout */
+.hero { 
+    grid-area: header;
+    background-color: rgb(8,36,68);
+}
+.nav { 
+    grid-area: menu;  
+}
+.principal {
+    grid-area: main;
+}
+.pie_de_pagina {
+    grid-area: footer ;
+    background-color: rgb(8,36,68);
+}  
+.grid_container {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-areas: 
+        "header header"
+        "menu main"
+        "footer footer"
+    ;
+    gap: 20px;
+}
+    
+    /* grid grilla */
+.principal {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 20px;
+}
+
+    /* header */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo {
+    width: 90px;
+    margin-bottom: 5px;
+ }    
+
+    /* Tarjetas de producto */
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    
+}     
+
+.imagen_carta {
+    transition: background-color 0.3s ease;
+}
+.imagen_carta:hover {
+    transform: scale(1.1);
+}
+img {
+    border-radius: 10px;
+}
+
+.titulo_carta {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+}
+
+.precio {
+    width: 100%;
+    height: 25px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+h3 {
+    margin-right: 50px;   
+}
+
+.linea {
+    height: 1px;
+    width: 260px;
+    border-top: solid 2px rgba(8,36,68,0.2);
+}
+
+.boton_de_compra {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: steelblue;
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin: 0;  
+}
+
+.boton_de_compra:hover {
+    background-color: slategrey ;
+}
+
+    /* Menu Nav */
+.nav{
+    border-right: solid 2px rgba(8,36,68,0.3);
+}
+
+.barra-busqueda {
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+.barra-busqueda input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+.barra-busqueda button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+.barra-busqueda button:hover {
+    background-color: #0056b3;
+  }
+ 
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+ 
+.titulo {
+    height: 5px;
+}
+
+.availability{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+}
+
+.casillas_availability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.check_availability {
+    width: 90px;
+    padding-left: 55px;
+    
+}
+
+.card_color {
+    width: 200px;
+}
+
+.casillas_color {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 160px
+}
+
+.check {
+    height: 27px;
+    width: 40px;
+}
+
+.botones_filtros {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.aplicar_filtros {
+    width: 95px;
+    height: 40px;
+    border: none;
+    background-color: steelblue;
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    
+}
+.aplicar_filtros:hover {
+    background-color: slategrey;
+}
+.limpiar_filtros {
+    width: 95px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.limpiar_filtros:hover {
+    background-color: slategrey;
+}
+
+
+    /* general */
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p{ 
+    text-align: center;
+     color: white;
+}
+
+
+

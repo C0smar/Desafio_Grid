@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Grid</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/1e98b18bbd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="grid_container">
+
+    <header class="hero">
+
+        <img  class="logo" src="./assets/img/logo.png" alt="">
+        <h1> Twisted Fate</h1>
+
+    </header>
+
+
+    <menu class="nav">
+
+        <div class="card_name">
+            <h2 class="titulo">Nombre</h2>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar...">                
+              </div>
+        </div>
+
+        <div class="edition">
+            <h2 class="titulo">Edición</h2>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar...">                
+            </div>
+        </div>
+
+        <div class="format">
+            <h2 class="titulo">Formato</h2>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar...">                
+              </div>
+        </div>
+        
+        <div class="availability">
+            <h2 class="titulo">Disponibilidad</h2>
+            <div class="casillas_availability">
+
+                <div class="check_availability">
+                <label for="stock">
+                <input type="checkbox" id="stock" name="stock">
+                Stock
+                </label>
+                </div>
+
+                <div class="check_availability">
+                <label for="preventa">
+                <input type="checkbox" id="preventa" name="">
+                Preventa
+                </label>
+                </div>
+
+            </div>  
+        </div>
+
+        <div class="card_color">
+            <h2 class="titulo"> Color de las cartas</h2>
+            <div class="casillas_color">
+
+                <div class="check">
+                <label for="curiosidad">
+                <input type="checkbox" id="curiosidad" name="curiosidad">
+                <i class="fa-solid fa-droplet"></i>
+                </label>
+                </div>
+
+                <div class="check">
+                <label for="emoción">
+                <input type="checkbox" id="emoción" name="emoción">
+                <i class="fa-solid fa-fire"></i>
+                </label>
+                </div>
+
+                <div class="check">
+                <label for="instinto">
+                <input type="checkbox" id="instinto" name="instinto">
+                <i class="fa-solid fa-tree"></i>
+                </label>
+                </div>
+
+                <div class="check">
+                <label for="egoísmo">
+                <input type="checkbox" id="egoísmo" name="egoísmo">
+                <i class="fa-solid fa-skull"></i>
+                </label>
+                </div>
+
+                <div class="check">
+                <label for="organización">
+                <input type="checkbox" id="organización" name="organización">
+                <i class="fa-solid fa-asterisk"></i>
+                </label>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="botones_filtros">
+            <button class="aplicar_filtros">Aplicar filtros</button>
+            <button class="limpiar_filtros">Limpiar filtros</button>
+        </div>
+
+    </menu>
+
+
+    <main class="principal">
+
+        <div class=" producto">
+            <div class="imagen_carta"> <img src="./assets/img/satoru_the_infiltrator.avif" alt="Satoru the infiltrator"></div>
+            <h2 class="titulo_carta"> Satoru The Infiltrator</h2>
+            <div class="linea"></div>
+            <div class="precio">
+                <h3> $10.500</h3>
+            </div>
+            <button class="boton_de_compra"> Comprar </button>
+        </div>
+
+        <div class=" producto">
+            <div class="imagen_carta"> <img src="./assets/img/terror_of_the_peaks.avif" alt="Terror of the peaks"></div>
+            <h2 class="titulo_carta"> Terror Of The Peaks</h2>
+            <div class="linea"></div>
+            <div class="precio">
+                <h3> $11.500</h3>
+            </div>
+            <button class="boton_de_compra"> Comprar</button>
+        </div>
+
+        <div class=" producto">
+            <div class="imagen_carta"> <img src="./assets/img/bristly_bill_spine_sower.avif" alt="Bristly Bill Spine Sower"></div>
+            <h2 class="titulo_carta"> Bristly Bill Spine Sower</h2>
+            <div class="linea"></div>
+            <div class="precio">
+                <h3> $9.500</h3>
+            </div>
+            <button class="boton_de_compra"> Comprar</button>
+        </div>
+
+        <div class=" producto">
+            <div class="imagen_carta"> <img src="./assets/img/final_showdown.avif" alt="Final Showdown"></div>
+            <h2 class="titulo_carta"> Final Showdown</h2>
+            <div class="linea"></div>
+            <div class="precio">
+                <h3> $9.800</h3>
+            </div>
+            <button class="boton_de_compra"> Comprar</button>
+        </div>
+
+        <div class=" producto">
+            <div class="imagen_carta"> <img src="./assets/img/goldvein_hydra.avif" alt="Goldvein Hydra"></div>
+            <h2 class="titulo_carta"> Goldvein Hydra</h2>
+            <div class="linea"></div>
+            <div class="precio">
+                <h3> $7.400</h3>
+            </div>
+            <button class="boton_de_compra"> Comprar</button>
+        </div>
+
+        <div class=" producto">
+            <div class="imagen_carta"> <img src="./assets/img/jace_reawakened.avif" alt="Jace Reawakened"></div>
+            <h2 class="titulo_carta"> Jace Reawakened</h2>
+            <div class="linea"></div>
+            <div class="precio">
+                <h3> $11.300</h3>
+            </div>
+            <button class="boton_de_compra"> Comprar</button>
+        </div>
+
+        <div class=" producto">
+            <div class="imagen_carta"> <img src="./assets/img/swamp.avif" alt="Swamp"></div>
+            <h2 class="titulo_carta"> Swamp</h2>
+            <div class="linea"></div>
+            <div class="precio">
+                <h3> $16.500</h3>
+            </div>
+            <button class="boton_de_compra"> Comprar</button>
+        </div>
+
+        <div class=" producto">
+            <div class="imagen_carta"> <img src="./assets/img/gisa_the_hellraiser.avif" alt="Gisa The hellraiser"></div>
+            <h2 class="titulo_carta"> Gisa The hellraiser</h2>
+            <div class="linea"></div>
+            <div class="precio">
+                <h3> $20.500</h3>
+            </div>
+            <button class="boton_de_compra"> Comprar</button>
+        </div>
+        
+
+
+    </main>
+
+    <footer class="pie_de_pagina">
+        <p> @Twistedfate</p>
+
+    </footer>
+</div>   
+    
+</body>
+</html>
